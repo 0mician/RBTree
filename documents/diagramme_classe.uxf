@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><umlet_diagram><help_text>// Uncomment the following line to change the fontsize:
+// fontsize=14
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on UML elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold ⌘ to select multiple elements
+// Use ⌘+mouse to select via lasso
+//
+// Use ± or ⌘+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press ⌘+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text><zoom_level>8</zoom_level><element><type>com.umlet.element.base.Class</type><coordinates><x>824</x><y>256</y><w>168</w><h>56</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Comparable
+
+--
++ compareTo(Object o): int</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>272</x><y>128</y><w>216</w><h>328</h></coordinates><panel_attributes>RougeNoir
+--
+_-sentinelle: NoeudRN_
+-racine: NoeudRN
+-NbreEntree: int
+--
++insert(int,int): void
++remove(int): void
++addPoints(int,int): void
++getSize(): int
++printBreadthFirst(): void
++printInOrder(): void
++addFromFile(String): void
++RougeNoir(String): void
++hauteurArbre(): int
+-insererNoeud(NoeudRN): void
+-insertFixUp(NoeudRN): void
+-rotationGauche(NoeudRN): void
+-rotationDroite(NoeudRN): void
+-rechercheNoeud(int): NoeudRN
+-transplant(NoeudRN, NoeudRN): void
+-delete(NoeudRN): void
+-deleteFixUp(NoeudRN): void
+-minimum(): NoeudRN
+-maximum(): NoeudRN
+-hauteur(NoeudRN): int
+
+
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>584</x><y>152</y><w>168</w><h>136</h></coordinates><panel_attributes>NoeudRN
+--
+-etudiant: Etudiant
+-filsGauche: NoeudRN
+-filsDroit: NoeudRN
+-pere: NoeudRN
+-couleur: Couleur
+--
++key(): int
++toString(): String
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>584</x><y>320</y><w>168</w><h>96</h></coordinates><panel_attributes>Etudiant
+--
+-matricule: int
+-points: int
+--
++ajoutPoints(int): void
++getMatricule(): int
++toString(): String
+
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>40</x><y>160</y><w>176</w><h>152</h></coordinates><panel_attributes>ProgrammeGestion
+--
+-arbreRN: RougeNoir
+--
++greetings(): void
++menuGestion(): void
+-insertionEtudiant(): void
+-modificationEtudiant(): void
+-RemplacerViaFichier(): void
+-suppressionEtudiant(): void
+-affichageOrdonne(): void
+-affichageParNiveau(): void
+-affichageHauteurArbre(): void</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>728</x><y>208</y><w>64</w><h>40</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>48;24;24;24</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>752</x><y>264</y><w>88</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>72;24;24;24</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>728</x><y>336</y><w>64</w><h>40</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>48;24;24;24</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>752</x><y>208</y><w>40</w><h>168</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>24;24;24;152</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>640</x><y>264</y><w>40</w><h>72</h></coordinates><panel_attributes/><additional_attributes>24;24;24;56</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>192</x><y>208</y><w>96</w><h>40</h></coordinates><panel_attributes>m1=1
+m2= 1</panel_attributes><additional_attributes>24;24;80;24</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>848</x><y>144</y><w>112</w><h>64</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Couleur
+--
+Rouge
+Noir</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>464</x><y>208</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2= 1..*</panel_attributes><additional_attributes>24;24;120;24</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>728</x><y>152</y><w>136</w><h>40</h></coordinates><panel_attributes/><additional_attributes>24;24;120;24</additional_attributes></element></umlet_diagram>
